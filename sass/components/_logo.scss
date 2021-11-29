@@ -1,0 +1,13 @@
+.logo {
+  font-family: raleway;
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $color-primary;
+  &--highlight {
+    color: $color-highlight;
+  }
+  &--footer {
+    color: $color-accent;
+  }
+}

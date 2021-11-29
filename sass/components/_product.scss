@@ -1,0 +1,25 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin-right: 30px;
+  &--svg {
+    margin-bottom: 30px;
+  }
+  &--header {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-primary;
+    line-height: 16px;
+    margin: 0px 0px 10px 0px;
+  }
+  &--content {
+    margin: 0px;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $color-secondary;
+    letter-spacing: 0.03em;
+  }
+}

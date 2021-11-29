@@ -1,0 +1,58 @@
+.clients {
+  width: 100%;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &--header {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 42px;
+    text-align: center;
+  }
+  &--images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: -30px;
+  }
+  &-box {
+    border: 1px solid $color-icon;
+    border-radius: 4px;
+    color: $color-icon;
+    width: 170px;
+    height: 92px;
+    box-sizing: border-box;
+    margin-right: 30px;
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: border color;
+    &:hover {
+      border: 1px solid $color-highlight;
+      color: $color-highlight;
+    }
+    &--logo {
+      fill: currentColor;
+    }
+  }
+}
+.client-box {
+  border: 1px solid #afb1bb;
+  border-radius: 4px;
+  color: #afb1bb;
+  width: 170px;
+  height: 92px;
+  box-sizing: border-box;
+  margin-right: 30px;
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: border color;
+  &:hover {
+    border: 1px solid $color-highlight;
+    color: $color-highlight
+  }
+  &--logo {
+    fill: currentColor;
+  }
+}

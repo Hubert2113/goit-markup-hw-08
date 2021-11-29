@@ -1,0 +1,40 @@
+.header-studio {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 1600px;
+  height: 600px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  &--title {
+    color: $color-accent;
+    font-size: 44px;
+    line-height: 1.36;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+  &--button {
+    width: 200px;
+    height: 50px;
+    background-color: $color-highlight;
+    color: $color-accent;
+    border-radius: 4px;
+    border: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition-property: background-color box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    &:hover {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
+}

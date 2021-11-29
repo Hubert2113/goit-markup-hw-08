@@ -1,0 +1,16 @@
+.footer-links {
+  margin-right: 70px;
+  &--address {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 00.03em;
+    color: $color-accent;
+  }
+  &--phone-nr,
+  &--email {
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 00.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
