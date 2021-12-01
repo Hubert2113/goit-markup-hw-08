@@ -159,5 +159,8 @@
 <symbol id="icon-send" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M32 0l-32 18 10.227 3.788 15.773-14.788-11.998 16.186 0.010 0.004-0.012-0.004v8.814l5.735-6.691 7.265 2.691 5-28z"></path>
 </symbol>
+<symbol viewBox="0 0 40 40" id="icon-menu">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z" fill="black"/>
+</symbol>
 </defs>
 </svg>

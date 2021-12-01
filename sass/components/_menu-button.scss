@@ -1,0 +1,11 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .menu-button{
+        border: none;
+        padding: 0;
+        background-color: $color-accent;
+        justify-self: end;
+        margin-right: 15px;
+        height: 40px;
+        width: 40px;
+    }
+}
