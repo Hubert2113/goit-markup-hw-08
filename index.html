@@ -12,11 +12,27 @@
     </head>
 
     <body>
+        <div class="header-menu is-hidden" data-header-menu>
+            <button class="header-menu--close-btn" type="button" data-header-menu-close>
+                <svg width="30px" height="30px">
+                    <use href="images/sprite.svg#icon-close-btn"></use>
+                </svg>
+            </button>
+            <nav class="header-menu--nav">
+                <a href="index.html" class="header-menu--nav-item header-menu--nav-highlight">Agencja</a>
+                <a href="portfolio.html" class="header-menu--nav-item">Portfolio</a>
+                <a href="kontakt.html" class="header-menu--nav-item">Kontakt</a>
+            </nav>
+            <address class="header-menu--contact">
+                <a href="mailto:info@devstudio.com" class="header-menu--contact-item">info@devstudio.com</a>
+                <a href="tel:+48111111111" class="header-menu--contact-item">+48 111 111 111</a>
+            </address>
+        </div>
         <header>
             <div class="header-top--border">
                 <div class="container--header-mobile">
                     <a href="index.html" class="logo"><span class="logo--highlight">Web</span>Studio</a>
-                    <button class="menu-button">
+                    <button class="menu-button" data-header-menu-open>
                         <svg class="menu-button--icon" width="40px" height="40px">
                             <use href="images/sprite.svg#icon-menu"></use>
                         </svg>
@@ -59,7 +75,7 @@
                             et malesuada</p>
                     </div>
 
-                    <!-- <div class="product">
+                    <div class="product">
                         <svg class="product--svg">
                             <use href="images/sprite.svg#icon-group-2"></use>
                         </svg>
@@ -87,12 +103,12 @@
                         <p class="product--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum
                             et
                             malesuada</p>
-                    </div>-->
+                    </div>
                 </div>
             </div>
         </article>
-        <!-- <main> -->
-            <!-- <div class="main">
+        <main>
+            <div class="main">
                 <section class="about-us">
                     <div class="container column">
                         <h2 class="about-us--header">Czym się zajmujemy</h2>
@@ -235,49 +251,49 @@
                             </div>
                         </div>
                     </div>
-                </section> -->
-                <!-- <section class="clients">
+                </section>
+                <section class="clients">
                     <div class="container column">
                         <h2 class="clients--header">Nasi klienci</h2>
                         <div class="clients--images">
                             <div class="client-box">
                                 <svg class="client-box--logo">
-                                    <use href="images/sprite.svg#icon-client-1" width="170px" height="92px"></use>
+                                    <use href="images/sprite.svg#icon-client-1"></use>
                                 </svg>
                             </div>
                             <div class="client-box">
                                 <svg class="client-box--logo">
-                                    <use href="images/sprite.svg#icon-client-2" width="170px" height="92px"></use>
+                                    <use href="images/sprite.svg#icon-client-2"></use>
                                 </svg>
                             </div>
                             <div class="client-box">
                                 <svg class="client-box--logo">
-                                    <use href="images/sprite.svg#icon-client-3" width="170px" height="92px"></use>
+                                    <use href="images/sprite.svg#icon-client-3"></use>
                                 </svg>
                             </div>
                             <div class="client-box">
                                 <svg class="client-box--logo">
-                                    <use href="images/sprite.svg#icon-client-4" width="170px" height="92px"></use>
+                                    <use href="images/sprite.svg#icon-client-4"></use>
                                 </svg>
                             </div>
                             <div class="client-box">
                                 <svg class="client-box--logo">
-                                    <use href="images/sprite.svg#icon-client-5" width="170px" height="92px"></use>
+                                    <use href="images/sprite.svg#icon-client-5"></use>
                                 </svg>
                             </div>
                             <div class="client-box">
                                 <svg class="client-box--logo">
-                                    <use href="images/sprite.svg#icon-client-6" width="170px" height="92px"></use>
+                                    <use href="images/sprite.svg#icon-client-6"></use>
                                 </svg>
                             </div>
                         </div>
                     </div>
-                </section>-->
-            <!-- </div>
-        </main> -->
-       <!-- <footer>
+                </section>
+            </div>
+        </main>
+        <footer>
             <div class="footer">
-                <div class="container column">
+                <div class="container">
                     <div class="footer--content">
                         <div class="footer-links">
                             <a href="index.html" class="logo logo--footer"><span class="logo--highlight">Web</span>Studio</a>
@@ -313,19 +329,17 @@
                             </div>
                         </div>
                         <div class="footer-form">
-                            <form>
-                                <label>
-                                    <h4 class="footer-form--header">ZAPISZ SIĘ DO NEWSLETTERA</h4>
-                                    <input class="footer-form--textfield" placeholder="E-mail" type="email" name="email=newsletter">
-                                </label>
-                                <button class="footer-form--btn">
-                                    <span>Zapisz się</span>
-                                    <svg width="24px" height="24px">
-                                        <use href="images/sprite.svg#icon-send"></use>
-                                    </svg>
-                                </button>
-                            </form>
-                        </div>
+                            <label class="footer-form--label">
+                                <h4 class="footer-form--header">ZAPISZ SIĘ DO NEWSLETTERA</h4>
+                                <input class="footer-form--textfield" placeholder="E-mail" type="email" name="email=newsletter">
+                            </label>
+                            <button class="footer-form--btn">
+                                <span>Zapisz się</span>
+                                <svg width="24px" height="24px">
+                                    <use href="images/sprite.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -339,33 +353,33 @@
                     </svg>
                 </button>
                 <h2 class="modal--header">Zostaw swoje dane w formularzu poniżej</h2>
-                <form>
-                    <label>
+                <form class="form">
+                    <label class="form--item">
                         <div class="form--label">Imie</div>
                         <input class="form--textfield" type="text" name="firstname">
                         <svg width="18px" height="18px" class="form--icon">
                             <use href="images/sprite.svg#icon-person"></use>
                         </svg>
                     </label>
-                    <label>
+                    <label class="form--item">
                         <div class="form--label">Telefon</div>
                         <input class="form--textfield" type="tel" name="tel">
                         <svg width="18px" height="18px" class="form--icon">
                             <use href="images/sprite.svg#icon-phone"></use>
                         </svg>
                     </label>
-                    <label>
+                    <label class="form--item">
                         <div class="form--label">Email</div>
                         <input class="form--textfield" type="email" name="email">
                         <svg width="18px" height="18px" class="form--icon">
                             <use href="images/sprite.svg#icon-email"></use>
                         </svg>
-                    </label>
+                    </label class="form--item">
                     <label>
                         <div class="form--label">Komentarz</div>
                         <textarea class="form--comment" name="comment" placeholder="Wprowadź tekst"></textarea><br>
                     </label>
-                    <label>
+                    <label class="form--item">
                         <div class="user-policy">
                             <input class="user-policy--invisible-checkbox" type="checkbox" name="terms-of-use">
                             <span class="user-policy--text">Oświadczam iż akcjeptuję <a class="user-policy--link" href="">Regulamin</a> i <a class="user-policy--link" href="">Politykę Prywatności</a></span>
@@ -376,6 +390,7 @@
             </div>
         </div>
 
-        <script src="js/modal.js"></script> -->
+        <script src="js/modal.js"></script>
+        <script src="js/header-menu.js"></script>
     </body>
 </html>

@@ -20,6 +20,7 @@ body {
 @import "components/buttons-box";
 @import "components/projects-box";
 @import "components/menu-button";
+@import "components/header-menu";
 
 .container {
   max-width: 1200px;
@@ -43,30 +44,33 @@ body {
   border-bottom: 1px #ececec solid;
 }
 
-.main {
-  min-width: 1600px;
-}
+// .main {
+//   min-width: 1600px;
+// }
 
+// .footer {
+//   min-width: 1600px;
+//   height: 252px;
+//   $color-background: #2f303a;
+//   background-color: $color-background;
+// }
 
-.footer {
-  min-width: 1600px;
-  height: 252px;
-  $color-background: #2f303a;
-  background-color: $color-background;
-}
-
-.footer--content {
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
+// .footer--content {
+//   width: 100%;
+//   height: 100%;
+//   align-items: center;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: flex-start;
+// }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
     max-width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
     &--header-mobile {
       width: 480px;
       height: 100%;
@@ -80,5 +84,21 @@ body {
   .header-top--border {
     max-width: 767px;
     height: 60px;
+  }
+  .main {
+    max-width: 767px;
+  }
+  .footer {
+    max-width: 767px;
+    $color-background: #2f303a;
+    background-color: $color-background;
+    &--content {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 0px;
+      width: 100%;
+    }
   }
 }

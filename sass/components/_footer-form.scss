@@ -1,8 +1,10 @@
 .footer-form {
-  margin-left: 77px;
+  // margin-left: 77px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
+  // margin-bottom: 24px;
   &--textfield {
     box-sizing: border-box;
     width: 358px;
@@ -40,5 +42,23 @@
   &--textfield:focus {
     border: 1px solid $color-highlight;
     outline: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-form{
+    width: 100%;
+    &--header{
+      text-align: center;
+    }
+    &--textfield{
+      width: 100%;
+    }
+    &--btn{
+      margin-top: 20px;
+    }
+    &--label{
+      width: 100%;
+    }
   }
 }

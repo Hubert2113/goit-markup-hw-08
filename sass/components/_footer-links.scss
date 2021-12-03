@@ -1,5 +1,5 @@
 .footer-links {
-  margin-right: 70px;
+//   margin-right: 70px;
   &--address {
     font-size: 14px;
     line-height: 1.71;
@@ -12,5 +12,18 @@
     line-height: 171%;
     letter-spacing: 00.03em;
     color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--address,
+    &--email,
+    &--phone-nr{
+      text-align: center;
+    }
   }
 }

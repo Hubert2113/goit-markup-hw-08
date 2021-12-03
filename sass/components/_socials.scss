@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 30px;
+  margin-right: -10px;
 }
 
 .social {
@@ -13,7 +14,7 @@
   align-items: center;
   color: $color-icon;
 
-  transition-property: background-color color;
+  transition-property: background, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
@@ -34,7 +35,7 @@
     height: 44px;
     margin-right: 10px;
 
-    transition-property: background-color color;
+    transition-property: background color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
     &:hover {
@@ -49,7 +50,6 @@
 
 .footer-socials {
   display: flex;
-  align-content: space-around;
   flex-direction: column;
   &--header {
     color: $color-accent;
@@ -59,5 +59,18 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .socials{
+    width: 206px;
+    justify-content: space-between;
+  }
+  .footer-socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
   }
 }
