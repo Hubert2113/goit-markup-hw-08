@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  min-width: 1200px;
   height: 480px;
   &--header {
     line-height: 42px;
@@ -35,6 +35,12 @@
 }
 
 @media screen and (max-width: 767px) {
+  .about-us{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .about-us{
     display: none;
   }

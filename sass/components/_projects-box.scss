@@ -81,3 +81,39 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects-box{
+    max-width: 1199px;
+    display: flex;
+    justify-content: center;
+    &2{
+      display: flex;
+      flex-wrap: wrap;
+      width: 738px;
+      justify-content: space-between;
+    }
+  }
+  .project{
+    height: auto;
+    max-width: 354px;
+    &--mask{
+      max-width: 354px;
+    }
+    &--img{
+      max-width: 354px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-box{
+    min-width: 1200px;
+    &2{
+      width: 1170px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}

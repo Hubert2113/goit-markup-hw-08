@@ -1,27 +1,16 @@
-// .lorem-ipsum {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: center;
-//   align-items: center;
-//   width: 100%;
-//   height: 289px;
-//   margin-top: 94px;
-//   margin-right: -30px;
-// }
-
 // .desc {
 //   min-width: 1600px;
 // }
 
 .product {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   //   width: 270px;
-//   //   margin-right: 30px;
-//   &--svg {
-//     margin-bottom: 30px;
-//   }
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   //   width: 270px;
+  //   //   margin-right: 30px;
+  //   &--svg {
+  //     margin-bottom: 30px;
+  //   }
   &--header {
     font-weight: bold;
     font-size: 14px;
@@ -43,6 +32,8 @@
 @media screen and (max-width: 767px) {
   .desc {
     max-width: 767px;
+    display: flex;
+    justify-content: center;
   }
   .lorem-ipsum {
     max-width: 450px;
@@ -56,12 +47,66 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    &--header{
-      margin-top: 30px
+    &--header {
+      margin-top: 30px;
     }
     &--svg {
       width: 100%;
       background-color: $color-background;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .desc {
+    max-width: 1199px;
+    margin-top: 60px;
+  }
+  .lorem-ipsum {
+    display: flex;
+    max-width: 768px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .product {
+    max-width: 354px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    &--svg {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &--header {
+      color: $color-primary;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .desc {
+    min-width: 1200px;
+  }
+  .lorem-ipsum {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 289px;
+    margin-top: 94px;
+    margin-right: -30px;
+  }
+  .product {
+    width: 270px;
+    &--svg{
+      width: 270px;
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
     }
   }
 }

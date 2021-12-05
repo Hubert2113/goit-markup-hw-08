@@ -1,5 +1,5 @@
 .footer-links {
-//   margin-right: 70px;
+  //   margin-right: 70px;
   &--address {
     font-size: 14px;
     line-height: 1.71;
@@ -16,13 +16,28 @@
 }
 
 @media screen and (max-width: 767px) {
-  .footer-links{
+  .footer-links {
     display: flex;
     flex-direction: column;
     align-items: center;
     &--address,
     &--email,
-    &--phone-nr{
+    &--phone-nr {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 144px 60px 0px;
+
+    &--address,
+    &--email,
+    &--phone-nr {
       text-align: center;
     }
   }

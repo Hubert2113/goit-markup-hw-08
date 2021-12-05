@@ -61,6 +61,8 @@
   .clients{
     max-width: 767px;
     padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
     &--header{
       font-weight: bold;
       font-size: 28px;
@@ -81,6 +83,55 @@
     margin-bottom: 30px;
     &--logo{
       width: 100%;
+      height: 92px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+  .clients{
+    max-width: 1199px;
+    &--header{
+      color: $color-primary;
+      font-weight: bold;
+      font-size: 28px;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+    &--images{
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+    }
+  }
+  .client-box{
+    width: 226px;
+    height: 92px;
+    margin-bottom: 30px;
+    &--logo{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients{
+    min-width: 1200px;
+    padding: 94px 0px;
+    &--images{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .client-box{
+    width: 170px;
+    height: 92px;
+    &--logo{
+      width: 170px;
       height: 92px;
     }
   }
