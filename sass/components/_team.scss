@@ -41,7 +41,7 @@
 //   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .team{
     width: 100%;
     background-color: $color-background;
@@ -52,6 +52,7 @@
     }
     &-member{
       width: 100%;
+      height: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
